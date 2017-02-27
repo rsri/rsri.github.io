@@ -2,26 +2,36 @@ html, body {
   height: 100%;
   min-height: 100%;
   margin: 0px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-.loader {
-    z-index: 3;
+.fullscreen, .loader {
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    background-color: #47639e;
     width: 100%;
     height: 100%;
+}
+.loader {
+    z-index: 3;
+    position: fixed;
+    background-color: #47639e;
 }
 .loadercontainer {
 	position:fixed;
     top: 47%;
     left: 47%;
 }
+#loadertext {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -50%;
+}
 .spinloader {
-    border: 8px solid #f3f3f3; /* Light grey */
-    border-top: 8px solid #617cb8; /* Blue */
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #617cb8;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -30,4 +40,120 @@ html, body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+#header-container {
+    height: 100%;
+}
+#header-container > div {
+    float: left;
+    height: 100%;
+}
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.logo_main {
+    width: 80%;
+    height: 70%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: larger;
+}
+.table_of_contents {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social_media {
+    width: 15%;
+}
+.table_of_contents > div {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100%;
+}
+.table_of_contents > div:hover, .social_media > a:hover, .active {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.2);
+    text-decoration: none;
+    color: rgb(200,200,200);
+}
+.active {
+    border-bottom: 2px solid white;
+}
+.social_media > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 20%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+#header {
+    background: url("../res/main_div_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#personal_info_div {
+    background: url("../res/gradient.jpg");
+    background-size: cover;
+}
+#experience_div {
+    background: url("../res/gradient_rot.jpg");
+    background-size: cover;
+}
+#education_div {
+    background: url("../res/gradient.jpg");
+    background-size: cover;
+}
+#skills_div {
+    background: url("../res/gradient_rot.jpg");
+    background-size: cover;
+}
+#contact_div {
+    background: url("../res/gradient.jpg");
+    background-size: cover;
+}
+.opaqueheader {
+    background: rgb(26, 26, 26);
+    height: 50px;
+    -moz-box-shadow: -1px 4px 12px #000000;
+    -webkit-box-shadow: -1px 4px 12px #000000;
+    box-shadow: -1px 6px 8px #5A5A5A;
+}
+.transparentheader {
+    background: rgba(235, 247, 249, 0.2);
+    height: 70px;
+}
+.transparentheader, .opaqueheader {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.opaquenav-up {
+    top: -50px;
+}
+.transparentnav-up {
+    top: -70px;
 }

@@ -3,21 +3,86 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Welcome to Srikanth's github.</title>
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<meta name="keywords" content="Srikanth, Srikanth Ramachandran, JQuery, Javascript, HTML5, CSS, Java, Android">
+	<title>Srikanth's github resume</title>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" > </script>
 	<link rel="stylesheet" href="css/index.css">
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" /> -->
+	<script type="text/javascript" src="libs/jquery.waypoints.js"></script>
 	<script type="text/javascript" src="js/index.js"> </script>
 </head>
 <body>
 	<div id="loader_div" class="loader">
 		<div class="loadercontainer">
 			<div class="spinloader"></div>
-			<p style="color: white; size: 35px;text-align: center;">Loading...</p>
+			<p id="loadertext">Loading...</p>
+		</div>
+	</div>
+	
+	<div id="body" style="display: none;">
+
+		<header class="transparentheader nav-down" >
+			<div id="header-container">
+				<div class="logo">
+					<div class="logo_main">
+						SRIKANTH R
+					</div>
+				</div>
+				<div class="table_of_contents">
+					<div id="personal_info_trigger" data-div="#personal_info_div">
+						PERSONAL DETAILS
+					</div>
+					<div id="experience_trigger" data-div="#experience_div">
+						EXPERIENCE
+					</div>
+					<div id="education_trigger" data-div="#education_div">
+						EDUCATION
+					</div>
+					<div id="skills_trigger" data-div="#skills_div">
+						SKILLS
+					</div>
+					<div id="contact_trigger" data-div="#contact_div">
+						CONTACT
+					</div>
+				</div>
+				<div class="social_media">
+					<a href="#" title="Srikanth's Facebook">
+						F
+					</a>
+					<a href="#" title="Srikanth's Linkedin">
+						L
+					</a>
+					<a href="#" title="Srikanth's Upwork">
+						U
+					</a>
+					<a href="#" title="Srikanth's Hackerrank">
+						H
+					</a>
+					<a href="#" title="Srikanth's Github">
+						G
+					</a>
+				</div>
+			</div>
+		</header>
+		<div id="header">
+
+		</div>
+
+		<div id="personal_info_div" data-trigger="#personal_info_trigger">
+			Personal info goes here....
+		</div>
+		<div id="experience_div" data-trigger="#experience_trigger">
+			Experience info goes here....
+		</div>
+		<div id="education_div" data-trigger="#education_trigger">
+			Education info goes here....
+		</div>
+		<div id="skills_div" data-trigger="#skills_trigger">
+			Skills info goes here....
+		</div>
+		<div id="contact_div" data-trigger="#contact_trigger">
+			Contact info goes here....
 		</div>
 	</div>
 
-	<p id="dummy" style="display: none;">Under construction</p>
 </body>
 </html>
