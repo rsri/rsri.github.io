@@ -21,14 +21,14 @@ $(document).ready(function() {
 	setWayPoint("#education_div");
 	setWayPoint("#skills_div");
 	setWayPoint("#contact_div");
-	$("#header").waypoint(function() {
-		var id =$(this.element).attr('id');
-		console.log(id);
+	var waypointFunc = function() {
 		removedviewattr = "opaque";
 		viewattr = "transparent";
 		$("header").removeClass("opaqueheader").addClass("transparentheader");
 		$(".table_of_contents").children().removeClass("active");
-	}, {offset:'-75%'});
+	};
+	$("#header").waypoint(waypointFunc, {offset:'-75%'});
+	$("#header").waypoint(waypointFunc, {offset:'-15%'});
 });
 
 var viewattr = "transparent";
@@ -36,8 +36,6 @@ var removedviewattr = "opaque";
 
 function setWayPoint(section) {
 	var waypointFunc = function() {
-		var id =$(this.element).attr('id');
-		console.log(id);
 		removedviewattr = "transparent";
 		viewattr = "opaque";
 		$("header").removeClass("transparentheader").addClass("opaqueheader");
@@ -51,7 +49,7 @@ function setWayPoint(section) {
 
 function scroll(section) {
 	$('html, body').animate({
-		scrollTop: $(section).offset().top
+		scrollTop: ($(section).offset().top - 25)
 	}, 500);
 }
 

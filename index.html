@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 	<meta name="keywords" content="Srikanth, Srikanth Ramachandran, JQuery, Javascript, HTML5, CSS, Java, Android">
 	<title>Srikanth's github resume</title>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" > </script>
@@ -23,24 +23,24 @@
 		<header class="transparentheader nav-down" >
 			<div id="header-container">
 				<div class="logo">
-					<div class="logo_main">
+					<div class="logo_main center">
 						SRIKANTH R
 					</div>
 				</div>
-				<div class="table_of_contents">
-					<div id="personal_info_trigger" data-div="#personal_info_div">
+				<div class="table_of_contents center">
+					<div id="personal_info_trigger" data-div="#personal_info_div" class="center">
 						PERSONAL DETAILS
 					</div>
-					<div id="experience_trigger" data-div="#experience_div">
+					<div id="experience_trigger" data-div="#experience_div" class="center">
 						EXPERIENCE
 					</div>
-					<div id="education_trigger" data-div="#education_div">
+					<div id="education_trigger" data-div="#education_div" class="center">
 						EDUCATION
 					</div>
-					<div id="skills_trigger" data-div="#skills_div">
+					<div id="skills_trigger" data-div="#skills_div" class="center">
 						SKILLS
 					</div>
-					<div id="contact_trigger" data-div="#contact_div">
+					<div id="contact_trigger" data-div="#contact_div" class="center">
 						CONTACT
 					</div>
 				</div>
@@ -67,20 +67,84 @@
 
 		</div>
 
-		<div id="personal_info_div" data-trigger="#personal_info_trigger">
-			Personal info goes here....
+		<div id="personal_info_div" data-trigger="#personal_info_trigger" class="center">
+			<div class="div_header center">
+				<div class="div_header_content">
+					<p class="div_header_tiny_text">
+						<span class="grey-background">Who am I?</span>
+					</p>
+					<h1 class="div_header_main_text">
+						PERSONAL INFO
+					</h1>
+				</div>
+			</div>
+			<div id="personal_info_inner_div">
+				Personal info goes here...
+			</div>
 		</div>
-		<div id="experience_div" data-trigger="#experience_trigger">
-			Experience info goes here....
+
+		<div id="experience_div" data-trigger="#experience_trigger" class="center">
+			<div class="div_header center">
+				<div class="div_header_content">
+					<p class="div_header_tiny_text">
+						<span class="white-background">Where do I work?</span>
+					</p>
+					<h1 class="div_header_main_text">
+						EXPERIENCE
+					</h1>
+				</div>
+			</div>
+			<div id="experience_inner_div">
+				Experience info goes here...
+			</div>
 		</div>
-		<div id="education_div" data-trigger="#education_trigger">
-			Education info goes here....
+
+		<div id="education_div" data-trigger="#education_trigger" class="center">
+			<div class="div_header center">
+				<div class="div_header_content">
+					<p class="div_header_tiny_text">
+						<span class="grey-background">What did I study?</span>
+					</p>
+					<h1 class="div_header_main_text">
+						EDUCATION
+					</h1>
+				</div>
+			</div>
+			<div id="education_inner_div">
+				Education info goes here...
+			</div>
 		</div>
-		<div id="skills_div" data-trigger="#skills_trigger">
-			Skills info goes here....
+
+		<div id="skills_div" data-trigger="#skills_trigger" class="center">
+			<div class="div_header center">
+				<div class="div_header_content">
+					<p class="div_header_tiny_text">
+						<span class="white-background">What do I do?</span>
+					</p>
+					<h1 class="div_header_main_text">
+						SKILLS
+					</h1>
+				</div>
+			</div>
+			<div id="skills_inner_div">
+				Skills goes here...
+			</div>
 		</div>
-		<div id="contact_div" data-trigger="#contact_trigger">
-			Contact info goes here....
+
+		<div id="contact_div" data-trigger="#contact_trigger" class="center">
+			<div class="div_header center">
+				<div class="div_header_content">
+					<p class="div_header_tiny_text">
+						<span class="grey-background">How to reach me?</span>
+					</p>
+					<h1 class="div_header_main_text">
+						CONTACT
+					</h1>
+				</div>
+			</div>
+			<div id="contact_inner_div">
+				Contact info goes here...
+			</div>
 		</div>
 	</div>
 
