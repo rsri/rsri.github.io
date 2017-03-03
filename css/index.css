@@ -103,35 +103,25 @@ html, body {
     background-size: cover;
     background-attachment: fixed;
 }
-#personal_info_div {
-    background: url("../res/gradient.jpg");
-    background-size: cover;
+.div-background {
+    background: rgb(210,215,219);
+    background: -webkit-linear-gradient(rgb(210,215,219), rgb(255,255,255));
+    background: -o-linear-gradient(rgb(210,215,219), rgb(255,255,255));
+    background: -moz-linear-gradient(rgb(210,215,219), rgb(255,255,255));
+    background: linear-gradient(rgb(210,215,219), rgb(255,255,255));
     flex-direction: column;
 }
-#experience_div {
-    background: url("../res/gradient_rot.jpg");
-    background-size: cover;
-    flex-direction: column;
-}
-#education_div {
-    background: url("../res/gradient.jpg");
-    background-size: cover;
-    flex-direction: column;
-}
-#skills_div {
-    background: url("../res/gradient_rot.jpg");
-    background-size: cover;
+.alt-div-background {
+    background: -webkit-linear-gradient(rgb(255,255,255), rgb(210,215,219));
+    background: -o-linear-gradient(rgb(255,255,255), rgb(210,215,219));
+    background: -moz-linear-gradient(rgb(255,255,255), rgb(210,215,219));
+    background: linear-gradient(rgb(255,255,255), rgb(210,215,219));
     flex-direction: column;
 }
 .center {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#contact_div {
-    background: url("../res/gradient.jpg");
-    background-size: cover;
-    flex-direction: column;
 }
 .opaqueheader {
     background: rgb(26, 26, 26);
@@ -162,14 +152,17 @@ html, body {
     top: -70px;
 }
 #personal_info_inner_div, #education_inner_div, #skills_inner_div, #contact_inner_div, #experience_inner_div {
+    margin-top: 50px;
     width: 95%;
     height: 75%;
+    margin-bottom: 50px;
 }
 #personal_info_inner_div > div {
     float: left;
     height: 100%;
 }
 .div_header {
+    margin-top: 50px;
     width: 95%;
     height: 25%;
 }
@@ -188,24 +181,111 @@ html, body {
 .div_header_content > p {
     text-align: center;
 }
-.grey-background, .white-background {
+.subtext-background {
     padding-left: 15px;
     padding-right: 15px;
     width: 80%;
-}
-.grey-background {
-    background: rgb(217,220,225);
-    background: -webkit-linear-gradient(rgb(217,220,225), rgb(220,224,227));
-    background: -o-linear-gradient(rgb(217,220,225), rgb(220,224,227));
-    background: -moz-linear-gradient(rgb(217,220,225), rgb(220,224,227));
-    background: linear-gradient(rgb(217,220,225), rgb(220,224,227));
-}
-.white-background {
     background: rgb(255,255,255);
+    border: 0.5px solid grey;
+    border-radius: 5px;
 }
-#avatar_div {
-    width: 30%;
+.avatar_div {
+    width: 20%;
 }
 .avatar {
-
+    width: 100%;
+    height: auto;
+}
+.details_div {
+    width: 30%;
+    font-size: 14px;
+}
+.details_ul {
+    -webkit-padding-start:0px;
+    -moz-padding-start:0px;
+    -o-padding-start:0px;
+}
+.details_list {
+    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid grey;
+}
+.profile_div {
+    width: 48%;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 2%;
+}
+.profile_div > p {
+    font-size: 14px;
+    margin-left: 10px;
+    -webkit-margin-before: 0em;
+    -moz-margin-before: 0em;
+    -o-margin-before: 0em;
+}
+.experience_div_single {
+    margin-top: 55px;
+    float: left;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 55px;
+    border-bottom: 1px solid grey;
+}
+.experience_div_single > div {
+    float: left;
+    height: 100%;
+}
+.month_year {
+    text-align: right;
+}
+.month_year, .dash {
+    display: inline-block;
+}
+.month_year > h2, .year > h2, .job_desc > h3 {
+    -webkit-margin-before: 0.3em;
+    -webkit-margin-after: 0.3em;
+    -moz-margin-before: 0.3em;
+    -moz-margin-after: 0.3em;
+    -o-margin-before: 0.3em;
+    -o-margin-after: 0.3em;
+}
+.company_details {
+    margin-left: 10px;
+    width: 30%;
+    padding-bottom: 5px;
+    padding-right: 5%;
+    border-right: 1px solid grey;
+}
+.job_desc {
+    width: 58%;
+    margin-left: 2%;
+}
+.job_desc > p {
+    font-size: small;
+}
+.month, .product {
+    font-variant: small-caps;
+}
+.month, .product, .company_url {
+    display: block;
+    text-align: right;
+}
+.company_url {
+    text-decoration: none;
+    color: rgb(62, 131, 242);
+}
+.company_url:hover {
+    color: rgb(38, 116, 242);
+    text-decoration: underline;
+}
+.year {
+    text-align: right;
+    padding-bottom: 5px;
+}
+.year:after {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    content: "";
 }

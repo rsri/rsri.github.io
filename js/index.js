@@ -3,11 +3,9 @@ $(document).ready(function() {
 	$("#body").show();
 	var winHeight = $(window).height();
 	$("#header").css("height", winHeight );
-	$("#personal_info_div").css("height", winHeight );
-	$("#experience_div").css("height", winHeight );
-	$("#education_div").css("height", winHeight );
-	$("#skills_div").css("height", winHeight );
-	$("#contact_div").css("height", winHeight );
+	$("#personal_info_div").css("min-height", winHeight );
+	$("#skills_div").css("min-height", winHeight );
+	$("#contact_div").css("min-height", winHeight );
 	header();
 
 	$("#personal_info_trigger, #experience_trigger, #education_trigger, #skills_trigger, #contact_trigger").click(function() {
